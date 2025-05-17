@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Double Numbers</title>
+  <style>
+  
+    body {
+      background-color: pink;
+      text-align: center;
+    }
+    h2 {
+      color: violet;
+    }
+    #numbers {
+      color: white;
+      font-size: 18px;
+    }
+    #doubled {
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Doubling the Numbers using map()</h2>
+
+  <p id="numbers"></p>
+  <p id="doubled"></p>
+
+  <script>
+    
+   var numbers = [1, 2, 3, 4, 5];
+
+   
+   var doubled = numbers.map(num => num * 2);
+
+    
+    document.getElementById("numbers").innerText = "Before doubled array: " + numbers;
+    document.getElementById("doubled").innerText = "After doubled array: " + doubled;
+  </script>
+</body>
+</html>
